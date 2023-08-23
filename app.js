@@ -6,13 +6,8 @@ const app = express();
 app.use(express.static('public'));
 
 // ルーティング
-app.use(express.static('public'));
-
+// 一番初めにアクセスするページはルートURL
 app.get('/', (req, res) => {
-  res.render('hello.ejs');
-});
-
-app.get('/top', (req, res) => {
   res.render('top.ejs');
 });
 

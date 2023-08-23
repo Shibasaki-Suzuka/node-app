@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <a class="header-logo">LIST APP</a>
+      <a class="header-logo" href="/">LIST APP</a>
     </header>
     <div class="container">
       <div class="container-header">
@@ -25,7 +25,9 @@
           {id: 2, name: 'にんじん'},
           {id: 3, name: 'たまねぎ'}
         ];%>
+
         <ul class="table-body">
+          <!-- forEachで表示させる -->
           <% items.forEach((item) => { %>
             <li>
               <span class="id-column">
